@@ -191,14 +191,14 @@
   /* MAIN*/
   
   .page {
-    width: 1200px;
+    max-width: 1200px;
     padding: 65px 15px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     }
   .main {
-    width: 778px;
+    max-width: 778px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -288,7 +288,7 @@
   }
   
   .aside {
-   width: 272px;
+   max-width: 272px;
    }
   .aside-title a {
     display: block;
@@ -635,7 +635,7 @@
   
 
   .footer-conteiner {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
     padding: 0 15px;
       }
@@ -725,6 +725,12 @@
     }
     .menu-button::after {
       bottom: 0;
+    }
+    .article {
+      flex-wrap: wrap;
+    }
+    .section {
+      margin-top: 14px;
     }
     
   }
