@@ -335,9 +335,9 @@
     
     <article class="product">
     <picture class="product-image">
-                  <source media="(min-width: 360px)" srcset="images/shop-item-mobile1.jpg">
-                  <source media="(min-width: 768px)" srcset="images/shop-item-tablet1.jpg">
-                  <source media="(min-width: 1200px)" srcset="images/shop-item-desk1.jpg">
+                  <source media="(max-width: 360px)" srcset="images/shop-item-mobile1.jpg">
+                  <source media="(max-width: 768px)" srcset="images/shop-item-tablet1.jpg">
+                  <source media="(max-width: 1200px)" srcset="images/shop-item-desk1.jpg">
                   <img src="images/shop-item-desk1.jpg" class="product-img" alt="Pink pillow">
     </picture>
     <h3 class="product-title"><a href="#">Подушки на диван</a></h3>
@@ -361,9 +361,9 @@
 
     <article class="product">
         <picture class="product-image">
-            <source media="(min-width: 360px)" srcset="images/shop-item-mobile2.jpg">
-            <source media="(min-width: 768px)" srcset="images/shop-item-tablet2.jpg">
-            <source media="(min-width: 1200px)" srcset="images/shop-item-desk2.jpg">
+            <source media="(max-width: 360px)" srcset="images/shop-item-mobile2.jpg">
+            <source media="(max-width: 768px)" srcset="images/shop-item-tablet2.jpg">
+            <source media="(max-width: 1200px)" srcset="images/shop-item-desk2.jpg">
             <img src="images/shop-item-desk2.jpg" class="product-img" alt="handmade bunny doll">
         </picture>
          <h3 class="product-title">
@@ -388,9 +388,9 @@
 
       <article class="product">
         <picture class="product-image">
-                      <source media="(min-width: 360px)" srcset="images/shop-item-mobile3.jpg">
-                      <source media="(min-width: 768px)" srcset="images/shop-item-tablet3.jpg">
-                      <source media="(min-width: 1200px)" srcset="images/shop-item-desk3.jpg">
+                      <source media="(max-width: 360px)" srcset="images/shop-item-mobile3.jpg">
+                      <source media="(max-width: 768px)" srcset="images/shop-item-tablet3.jpg">
+                      <source media="(max-width: 1200px)" srcset="images/shop-item-desk3.jpg">
                       <img src="images/shop-item-desk3.jpg" class="product-img" alt="Hexagonal photo frame">
         </picture>
         <h3 class="product-title">
@@ -460,5 +460,49 @@
           </a>
         </div>
       </footer>
+
+      <section class="popup">
+        <div class="popup-conteiner">
+          <form class="popup-form">
+            <h3 class="popup-title">Ваш фидбек</h3>
+            <div class="form-group">
+            <label class="select-group">
+              <span class="select-label-question">Как часто вы заходите на сайт?</span>
+              <select class="selected">
+                <option value="daily" selected>Почти каждый день</option>
+                <option value="every-few-days">Раз в несколько дней</option>
+                <option value="every-few-weeks">Раз в несколько недель</option>
+                <option value="Several-times">Несколько раз в год</option>
+              </select>
+            </label>
+          </div>
+            
+            <div class="form-group">
+              <span class="radio-question">Вы подписаны на e-mail рассылку?</span>
+            <label class="radio-group">
+          <input class="radio radio-hidden"type="radio" id="signed" name="subscription" value="Yes" checked>
+          <span class="radio-text" for="Yes">Да</span>
+            </label>
+            <label class="radio-group">
+          <input class="radio radio-hidden" type="radio" id="signed"name="subscription" value="No">
+          <span class="radio-text" for="No">Нет</span>
+            </label>
+        </div>
+            
+            
+            <div class="form-group">
+              <label class="field-group">
+              <span class="textarea-question">Расскажите какой контент вы хотели бы видеть на нашем сайте?</span>
+              <textarea class="field-textarea" placeholder="Может, больше рецептов?" required></textarea>
+            </label>
+          </div>
+          <div class="form-group form-actions">
+            <button class="button-submit" type="submit">Отправить</button>
+          </div>
+          </form>
+          <button class="popup-close"></button>
+        </div>
+      </section>
+      
 </body>
 </html>
