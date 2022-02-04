@@ -86,6 +86,7 @@
     
     }
   .main-title {
+    max-width: 690px;
     margin: auto;
     font-size: 45px;
     color: #ffffff;
@@ -107,7 +108,7 @@
     max-width: 1660px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 64px;
+    margin-top: 49px;
   }
 
   .trend-box{
@@ -192,13 +193,14 @@
   
   .page {
     max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 65px 15px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     }
   .main {
-    max-width: 778px;
+    min-width: 778px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -540,6 +542,7 @@
      margin-left: auto;
      margin-right: auto;
      
+     
    }
    .products-title a {
      font-size: 20px;
@@ -566,26 +569,35 @@
     .products-container {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
     .product-image {
-      position: absolute;
-      top: -250px;
+      position: relative;
       z-index: -1;
       width: 300px;
       margin-right: auto;
       margin-left: auto;
-
-    } 
-
-    .product {
-      position: relative;
-      margin-top: 178px;
-      width: 346px;
-      border: 3px solid rgba(181, 159, 91, 0.6);
-      padding: 45px 20px 25px;
     }
-    .product:nth-child(n+2) {
-      margin-left: 50px;
+
+  
+    
+    .product {
+      width: 336px;
+      display: flex;
+      flex-direction: column;
+     
+    }
+
+  
+    .product-wrapper {
+      flex-grow: 1;
+      width: 336px;
+      position: relative;
+      margin-top: -26px;
+      z-index: 1;
+      padding: 49px 19px 20px 21px;
+      border: 3px solid rgba(181, 159, 91, 0.6);
+      
     }
 
     
@@ -606,7 +618,7 @@
     .product-footer {
       display: flex;
       justify-content: space-between;
-      margin-top: 27px;
+      margin-top: 24px;
     }
     .product-button {
       padding: 18px 30px;
@@ -615,6 +627,9 @@
       font-weight: bold;
       background-color: #b59f5b;
       border: 0;
+    }
+    .product-button:hover {
+      background-color: #323232;
     }
     .product-price {
       font-size: 14px;
@@ -956,8 +971,21 @@ border-width: 0;
     }
     .section:nth-of-type(n+2) {
       border-top: 3px solid #eeeeee;
-
     }
+    .article {
+      flex-direction: column;
+    }
+    .page {
+      max-width: 768px;
+      padding: 49px 35px;
+    }
+    .aside {
+      
+    }
+    .product:nth-of-type(3) {
+      margin-top: 28px;
+    }
+   
     
   }
   @media (min-width: 480px) and (max-width: 640px) {
