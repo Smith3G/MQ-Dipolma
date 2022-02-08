@@ -897,6 +897,9 @@ border-width: 0;
       display: none;
       
     }
+    .header {
+      background-image: url(../images/banner-bg-tablet.jpg);
+    }
     .menu-button {
       display: block;
       position: relative;
@@ -988,6 +991,7 @@ border-width: 0;
       border-top: 3px solid #eeeeee;
     }
     .article {
+      max-width: 389px;
       flex-direction: column;
       
     }
@@ -1006,6 +1010,9 @@ border-width: 0;
     .main-title {
       max-width: 310px;
       font-size: 26px;
+    }
+    .header {
+    background-image: url(../images/banner-mobile.jpg);
     }
     .logo > img {
       width: 270px;
@@ -1058,6 +1065,8 @@ border-width: 0;
     }
     .product {
       margin-top: 26px;
+      margin-left: auto;
+      margin-right: auto;
     }
   
     
@@ -1067,7 +1076,10 @@ border-width: 0;
 
   @media (max-width: 640px) and (orientation: landscape) {
     
-  
+    .trend-img {
+      width: calc(50% - 2px);
+  }
+}
   
   
   
