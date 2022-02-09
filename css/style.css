@@ -951,8 +951,10 @@ border-width: 0;
     .section {
       margin-top: 14px;
     }
-    
   }
+
+
+  
   @media (min-width: 641px) and (max-width: 1199px) {
 
     .main-title {
@@ -1062,6 +1064,9 @@ border-width: 0;
     .article {
       justify-content: center;
      
+    }
+    aside {
+      margin-top: 44px;
     }
     .product {
       margin-top: 26px;
