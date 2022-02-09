@@ -180,13 +180,13 @@
     width: 100%;
     position: relative;
     z-index: 1;
-    
-  }
-  .trend-title {
-      color: #ffffff;
-      font-size: 20px;
-      text-transform: uppercase;
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
 
+  }
+  .trend-title a:hover {
+    color: #b59f5b;
   }
   
   /* MAIN*/
