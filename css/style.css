@@ -105,7 +105,7 @@
 /*trends*/
 
   .trends {
-    max-width: 1660px;
+    max-width: 100vw;
     margin-right: auto;
     margin-left: auto;
     margin-top: 49px;
@@ -200,8 +200,7 @@
     justify-content: space-between;
     }
   .main {
-    width: 100%;
-    max-width: 778px;
+    flex: 2 1 778px;
     display: flex;
     flex-direction: column;
      }
@@ -211,15 +210,19 @@
   
   .article {
     display: flex;
+    width: 100%;
+    max-width: 776px;
+  
     justify-content: space-between;
     
     
    }
   .main-img {
     display: block;
+    max-width: 100%;
   }
   .section {
-    width: 367px;
+    max-width: 362px;
   }
   
   .subtitle a {
@@ -486,6 +489,7 @@
     text-transform: uppercase;
     color: #000000;
     font-size: 12px;
+    font-weight: bold;
     
     
         }
@@ -576,8 +580,8 @@
       position: relative;
       z-index: -1;
       width: 300px;
-      margin-right: auto;
-      margin-left: auto;
+      margin-left: 21px;
+      margin-right: 21px;
     }
 
   
@@ -939,19 +943,33 @@ border-width: 0;
     .article:not(:last-child) {
       margin-bottom: 30px;
     }
-    .content::after {
+    .article::after {
       content: "";
       background-color: #eeeeee;
       width: 100%;
       height: 3px;
       margin-top: 23px;
     }
-  
-
+    .main {
+      margin-right: 34px;
+    }
     .section {
       margin-top: 14px;
+      max-width: 100%;
     }
-  }
+    .image {
+      display: inline-flex;
+    }
+    .main-img {
+     flex: 1 1 381px;
+     aspect-ratio: 1/1;
+    }
+    .product {
+      width: calc(50% - 22px);
+    }
+   
+    }
+  
 
 
   
@@ -982,8 +1000,8 @@ border-width: 0;
       margin-top: 18px;
     }
     .trend-img {
+      max-height: 247px;
       width: calc(50% - 2px);
-      min-height: 246px;
       padding: 16px 20px;
     }
     .trend-img:nth-child(n+3) {
@@ -992,28 +1010,28 @@ border-width: 0;
     .section:nth-of-type(n+2) {
       border-top: 3px solid #eeeeee;
     }
-    .article {
-      max-width: 389px;
-      flex-direction: column;
-      
-    }
-    .page {
-      max-width: 768px;
-      padding: 49px 35px;
-    }
-      
-    .product:nth-of-type(3) {
-      margin-top: 28px;
-    }
-      .products-container {
+    .products-container {
       justify-content: initial;
     }
     .product:nth-child(even) {
       margin-left: 22px;
     }
-   
+    .article {
+      flex-direction: column;
+    }
+
+    .page {
+      padding: 49px 35px;
+    }
     
+      
+    .product:nth-of-type(3) {
+      margin-top: 28px;
+    }
+   
   }
+
+  /*
   @media (max-width: 640px) {
     .main-title {
       max-width: 310px;
@@ -1090,7 +1108,8 @@ border-width: 0;
     .trend-img {
       width: calc(50% - 2px);
   }
-}
+} */
+
   
   
   
