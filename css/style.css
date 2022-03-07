@@ -542,8 +542,6 @@
    /*Goods*/
    .products-section {
      max-width: 1170px;
-     padding-left: 15px;
-     padding-right: 15px;
      margin-left: auto;
      margin-right: auto;
      
@@ -579,7 +577,7 @@
     .product-image {
       position: relative;
       z-index: -1;
-      width: 300px;
+      width: 100%;
       margin-left: 21px;
       margin-right: 21px;
     }
@@ -596,7 +594,7 @@
   
     .product-wrapper {
       flex-grow: 1;
-      width: 336px;
+      width: 346px;
       position: relative;
       margin-top: -26px;
       z-index: 1;
@@ -937,9 +935,7 @@ border-width: 0;
     .menu-button::after {
       bottom: 0;
     }
-    .article {
-      flex-wrap: wrap;
-    }
+   
     .article:not(:last-child) {
       margin-bottom: 30px;
     }
@@ -962,7 +958,7 @@ border-width: 0;
     }
     .main-img {
      flex: 1 1 381px;
-     aspect-ratio: 1/1;
+    
     }
     .product {
       width: calc(50% - 22px);
@@ -986,7 +982,7 @@ border-width: 0;
       width: 156px;
     }
     .header-container {
-      max-width: 698px;
+      margin-right: 35px;
       margin-left: 24px;
     }
     .trends {
@@ -1010,9 +1006,7 @@ border-width: 0;
     .section:nth-of-type(n+2) {
       border-top: 3px solid #eeeeee;
     }
-    .products-container {
-      justify-content: initial;
-    }
+    
     .product:nth-child(even) {
       margin-left: 22px;
     }
@@ -1023,19 +1017,33 @@ border-width: 0;
     .page {
       padding: 49px 35px;
     }
-    
+    .products-section {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
       
     .product:nth-of-type(3) {
       margin-top: 28px;
     }
+    .products-container {
+      width: 100%;
+    }
+    .product-wrapper {
+      width: auto;
+    }
+    .product-image {
+      width: calc(100% - 44px);
+    }
+    .product-img {
+      width: 100%;
+    }
    
   }
-
-  /*
+/*
   @media (max-width: 640px) {
     .main-title {
       max-width: 310px;
-      font-size: 26px;
+      font-size: 26px; 
     }
     .header {
     background-image: url(../images/banner-mobile.jpg);
@@ -1108,7 +1116,8 @@ border-width: 0;
     .trend-img {
       width: calc(50% - 2px);
   }
-} */
+} 
+*/
 
   
   
