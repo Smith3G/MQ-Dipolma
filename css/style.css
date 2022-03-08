@@ -1064,9 +1064,7 @@ border-width: 0;
     .trends-title {
       margin-bottom: 23px;
     }
-    .trend-box {
-      flex-direction: column;
-    }
+    
     .trend-img {
       width: 100%;
     }
@@ -1148,14 +1146,26 @@ border-width: 0;
     
 
   }
+  @media (max-width: 640px) and (orientation: portrait) {
+
+    .trend-box {
+      flex-direction: column;
+    }
+
+  }
 
   @media (max-width: 640px) and (orientation: landscape) {
     
     .trend-img {
       width: calc(50% - 2px);
   }
+  .trends-box {
+    flex-direction: row;
+    
+  }
+  }
 } 
-*/
+
 
   
   
