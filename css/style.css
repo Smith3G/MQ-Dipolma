@@ -577,9 +577,7 @@
     .product-image {
       position: relative;
       z-index: -1;
-      width: 100%;
-      margin-left: 21px;
-      margin-right: 21px;
+      margin-left: 23px;
     }
 
   
@@ -705,6 +703,7 @@
   
 
 .popup {
+  border: 1px solid red;
   position: fixed;
   z-index: 5;
   top: 0;
@@ -967,16 +966,24 @@ border-width: 0;
     @media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
       .trend-img {
         width: calc(25% - 3px);
+        min-height: auto;
 
       }
       .trend {
         width: 100%;
+      }
+      .trend-title {
+        font-size: 10px;
       }
     }
     @media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
       .trend-img {
         width: calc(50% - 2px);
       }
+      .trend-img:nth-child(n+3) {
+        margin-top: 4px;
+      }
+       
     }
 
   
@@ -999,6 +1006,7 @@ border-width: 0;
     .trends {
       margin-bottom: auto;
     }
+
     .trends-title {
       margin-top: 49px;
       margin-bottom: 18px;
@@ -1010,9 +1018,7 @@ border-width: 0;
       max-height: 247px;
       padding: 16px 20px;
     }
-    .trend-img:nth-child(n+3) {
-      margin-top: 4px;
-    }
+    
     .section:nth-of-type(n+2) {
       border-top: 3px solid #eeeeee;
     }
@@ -1044,7 +1050,7 @@ border-width: 0;
       width: auto;
     }
     .product-image {
-      width: calc(100% - 44px);
+      width: calc(100% - 46px);
     }
     .product-img {
       width: 100%;
@@ -1082,11 +1088,7 @@ border-width: 0;
     .trend-img:nth-child(-n+3) {
       margin-bottom: 3px;
     }
-    .trend-title {
-      font-size: 16px;
-      font-weight: bold;
-    }
-  
+    
     .trend {
       padding: 30px 24px 29px 20px;
     }
@@ -1143,26 +1145,23 @@ border-width: 0;
     .product {
       margin-top: 26px;
       width: 100%;
-      
     }
     .product-wrapper {
       width: 100%;
     }
     .product-img {
-      width: calc(100% - 40px);
+    
+      width: calc(100% - 20px);
     }
-   
-  
-    
-    
 
   }
+
+  
   @media (max-width: 640px) and (orientation: portrait) {
 
     .trend-box {
       flex-direction: column;
     }
-
   }
 
   @media (max-width: 640px) and (orientation: landscape) {
@@ -1172,10 +1171,11 @@ border-width: 0;
   }
   .trends-box {
     flex-direction: row;
-    
   }
+
   }
-} 
+  
+
 
 
   
