@@ -713,6 +713,7 @@
   
 
 .popup_hidden {
+  
   visibility: hidden;
   position: fixed;
   z-index: 5;
@@ -725,10 +726,11 @@
 }
 
 .popup-conteiner {
+
 position: relative;
 width: 100%;
 max-width: 390px;
-
+overflow: visible;
 padding: 52px 29px;
 margin: auto;
 background-color: #ffffff;
@@ -868,7 +870,7 @@ border-width: 0;
 }
 .popup-close {
   position: absolute;
-  top: -25px;
+  top: -22px;
   right: 8px;
   width: 30px;
   height: 16px;
