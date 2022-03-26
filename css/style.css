@@ -209,6 +209,7 @@
     justify-content: space-between;
     }
   .main {
+    overflow-x: visible;
     flex: 2 1 778px;
     display: flex;
     flex-direction: column;
