@@ -25,6 +25,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+    
     
     
    
@@ -660,8 +662,6 @@
 
   .footer-conteiner {
     width: 100vw;
-    
-    
     max-width: 1200px;
     padding: 0 15px;
       }
